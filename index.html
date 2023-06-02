@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <title>My Site</title>
+
+    <script>
+        console.log("Hello");
+
+        function addone (x) {
+            return x+1;
+        }
+
+
+        function addonebutton () {
+            let mybutton = document.getElementById("myonlybutton")
+
+            if (mybutton != null) {
+                mybutton.innerText = parseInt(mybutton.innerText) + 1
+
+                if (mybutton.innerText === "10") {
+                    console.log("secret message ;)")
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: rgb(52, 164, 255);
+        }
+
+        p {
+            font-size: 50px;
+            color:coral
+        }
+
+        .myclass {
+            background-color: aliceblue;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 70px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>HELLO WORLD</h1>
+
+    <p class="myclass">this is my cool site! :)</p>
+    <a href="page2.html">link text</a>
+    <img src="bonk.png">
+
+    <p>hello <b>yo</b> hi</p>
+
+    <div style="background-color: red;">
+        this is a div
+    </div>
+    <button id="myonlybutton" onclick="addonebutton()">0</button>
+</body>
